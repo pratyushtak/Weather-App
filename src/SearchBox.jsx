@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function SearchBox({updateInfo}){
     let [city, setCity] = useState("");
     const API_URL = API;
-    const API_KEY = API_K
+    const API_KEY = API_K;
 
     let getWeatherInfo = async ()=>{
         let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
